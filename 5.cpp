@@ -1,13 +1,13 @@
 #include <iostream>
 
 void trim(char * text) {
-    char * c = text;
+    char * iterator = text;
     char * result = text;
 
-    while (*c) {
-        if (*c != ' ')
-            *result++ = *c;
-        c++;
+    while (*iterator) {
+        if (*iterator != ' ')
+            *result++ = *iterator;
+        iterator++;
     }
 
     *result = '\0';
